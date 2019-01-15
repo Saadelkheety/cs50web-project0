@@ -1,0 +1,28 @@
+{
+  "name": "project0",
+  "version": "1.0.0",
+  "description": "cs50 web project 0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saadelkheety/cs50web-project0.git"
+  },
+  "keywords": [
+    "project0"
+  ],
+  "author": "saad elkheety",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saadelkheety/cs50web-project0/issues"
+  },
+  "homepage": "https://github.com/Saadelkheety/cs50web-project0#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
