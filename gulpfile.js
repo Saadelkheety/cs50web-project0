@@ -14,7 +14,7 @@ function defaultTask(cb) {
 
 function sass(){
     return src('./css/*.scss')
-    .pipe(Sass().on('error', sass.logError))
+    .pipe(Sass().on('error', Sass.logError))
     .pipe(
           autoprefixer({
             browsers: ["last 2 versions"]

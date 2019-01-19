@@ -6,6 +6,7 @@
     <title>Saad Elkheety - Full Stack Web developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -16,28 +17,69 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-light navbar-expand-sm sticky-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="50"></a>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>
-                            About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./education.html"><i class="fas fa-graduation-cap"></i>
+                            Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./skills.html"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portofolio.html"><i class="fas fa-briefcase"></i> Portofolio</a></li>
                 </ul>
-                <span class="navbar-text">
-                    <a id="loginButton"><span class="fa fa-sign-in"></span> Login</a>
-                </span>
             </div>
         </div>
     </nav>
 
+    <div class="container home">
+        <div class="row justify-content-center" id="card-row">
+            <div class="col-sm-10 col-md-8 col-lg-6">
+                <div class="card">
+                    <img src="img\personalPhoto.jpg" id="personal-photo" class="card-img-top img-fluid img-thumbnail mx-auto"  alt="Saad Elkheey">
+                    <div class="card-body">
+                        <h1 class="card-title">Saad Elkheety</h1>
+                        <p class="card-text">As a full-stack software engineer, I love building valuable products that help people, and make their lives easier.<br><br> Recently, I developed several web applications using modern stack (Python and JavaScript) as part of my studies for the Full-stack Web Developer Nanodegree at Udacity and CS50 Web Programming with Python and JavaScript by Harvard university on Edx.<br><br> I'd love to combine my passion for developing humanity with my software development skills.</p>
+                        <a href="cv.pdf" class="btn btn-primary">My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="offset-md-1 col-md-5 justify-content-center">
+                    <address>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</li>
+                            <li><i class="fas fa-at"></i><a target="_blank" class="link-unstyled" href="mailto:SaadElkeety@gmail.com"> SaadElkeety@gmail.com</a></li>
+                            <li><i class="fas fa-mobile"></i> +201225956167 || +201005689586</li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-5">
+                    <div class="text-center">
+                        <a target="_blank" class="btn btn-social-icon btn-github" href="https://github.com/Saadelkheety"><i class="fab fa-github"></i></i></a>
+                        <a target="_blank" class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/saadelkheety"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/saadelkheety/"><i class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" class="btn btn-social-icon" href="mailto:SaadElkeety@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p><b>Copyright © 2019 <a href="https://www.facebook.com/saadelkheety" target="_blank">Saad Elkheety</a> All rights reserved.</b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
