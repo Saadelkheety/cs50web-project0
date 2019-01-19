@@ -11,11 +11,11 @@ body {
   color: inherit;
   text-decoration: inherit; }
 
-.home .card-text {
-  font-size: 105%;
-  font-family: Courier, monospace; }
+.home .education {
+  min-height: 80vh; }
 
-.home .card-title {
+.home .card-text, .home .card-title {
+  font-size: 105%;
   font-family: Courier, monospace; }
 
 footer, nav {
@@ -34,3 +34,16 @@ footer, nav {
 .home .card {
   background-color: rgba(200, 200, 200, 0.5);
   color: #000; }
+
+.carousel {
+  margin: 30px 0;
+  max-width: 650px; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      min-height: 300px; }
+
+table {
+  margin: 30px 0;
+  opacity: .7;
+  color: white; }
