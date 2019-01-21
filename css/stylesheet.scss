@@ -1,5 +1,27 @@
 $carousel-item-height: 300px;
-$background-dark: #512DA8;
+
+%main {
+    min-height: 75vh;
+}
+
+%main-text {
+    font-size: 1.05rem;
+    font-family: Courier, monospace;
+    @media (max-width: 575px) {
+        font-size:.95rem;
+    }
+    @media (max-width: 300px) {
+        font-size: .7rem;
+    }
+}
+
+
+%card {
+    // background-color: rgba(174,163,156, .5);
+    background-color: rgba(255,255,255, .3);
+    color: #000;
+}
+// for all html files
 
 body {
     background-image: url("../img/home.jpg");
@@ -15,28 +37,33 @@ body {
     color: inherit;
     text-decoration: inherit;
 }
-%main{
-    min-height: 80vh;
+
+nav {
+    background-color: rgba(255,255,255, .5);
+    color: #000;
 }
-%main-text{
-    font-size: 105%;
-    font-family: Courier, monospace;
+
+footer {
+    background-color: rgba(255,255,255, .4);
+    color: #000;
+    padding-top: 7px;
+}
+// for index.html
+.home {
+    @extend %main;
 }
 
 .home .card-text {
     @extend %main-text;
 }
+
 .home .card-title {
-    @extend %main-text;
+    font-size: 2rem;
 }
 
-footer, nav {
-    background-color: rgba(255,255,255, .2);
-    color: #000;
-}
 #personal-photo {
     border-radius: 50%;
-    max-width: 40%;
+    max-width: 200px;
     margin-top: 15px;
     margin-bottom: 5px;
 }
@@ -45,31 +72,75 @@ footer, nav {
     margin: 10vh 0;
 }
 
-.home .card{
-    background-color: rgba(200,200,200, .5);
-    color: #000;
-
+.home .card {
+    @extend %card;
 }
+// .home table{
+//     margin: 30px 0;
+//     opacity: .7;
+//     color: white;
+//     img{
+//
+//     }
+// }
+// for skills.html
+
+.skills .card {
+    @extend %card;
+}
+
+.skills ol > li,
+.skills table {
+    background-color: rgba(255,255,255, .0);
+}
+
+.tech-logos i {
+    font-size: 50px;
+    margin-top: 10px;
+}
+// for education.html
 
 .carousel {
     margin: 30px 0;
     max-width: 650px;
+
     .carousel-item {
         height: $carousel-item-height;
+
         img {
             min-height: 300px;
         }
     }
 }
-table{
-    margin: 30px 0;
-    opacity: .7;
-    color: white;
-    img{
 
-    }
+.education {
+    @extend %main;
+}
+.education .card {
+    background-color: rgba(255,255,255, .0);
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-.home .education {
+.education table{
+    margin: 0;
+}
+// for portofolio.html
+.portofolio {
     @extend %main;
+}
+
+.portofolio ul {
+    margin: 30px 0;
+
+    li {
+        @extend %main-text;
+        @extend %card;
+        padding-bottom: 30px;
+        h2{
+            @media (max-width: 575px) {
+                font-size:18px;
+            }
+        }
+    }
 }
